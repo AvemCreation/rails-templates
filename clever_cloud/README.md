@@ -1,6 +1,6 @@
 ## Rails Templates for Clever Cloud
 
-Quickly generate a rails app with the default [Le Wagon](http://www.lewagon.org) configuration
+Quickly generate a rails app with the default [Avem Création](http://www.avemcreation.com) configuration
 and [Clever Cloud](http://clever-cloud.com/) configuration using
 [Rails Templates](http://guides.rubyonrails.org/rails_application_templates.html).
 
