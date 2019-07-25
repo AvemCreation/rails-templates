@@ -1,6 +1,6 @@
 # Rails Templates
 
-Quickly generate a rails app with the default [Wagon](https://www.lewagon.com) configuration
+Quickly generate a rails app with the default [Avem Création](https://www.avemcreation.com) configuration
 using [Rails Templates](http://guides.rubyonrails.org/rails_application_templates.html).
 
 
