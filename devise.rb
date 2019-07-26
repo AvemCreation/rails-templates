@@ -107,7 +107,7 @@ file 'app/views/shared/_flashes.html.erb', <<-HTML
 <% end %>
 HTML
 
-run 'curl -L https://github.com/AvemCreation/awesome-navbars/raw/master/templates/_navbar_wagon.html.erb > app/views/shared/_navbar.html.erb'
+run 'curl -L https://github.com/AvemCreation/awesome-navbars/raw/master/templates/_navbar_avemcreation.html.erb > app/views/shared/_navbar.html.erb'
 run 'curl -L https://raw.githubusercontent.com/DonatienRolland/rails-templates/master/logo.png > app/assets/images/logo.png'
 
 # README
