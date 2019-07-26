@@ -5,7 +5,7 @@ run 'pgrep spring | xargs kill -9'
 run 'rm Gemfile'
 file 'Gemfile', <<-RUBY
 source 'https://rubygems.org'
-ruby '#{2.6.3}'
+ruby '#{RUBY_VERSION}'
 
 #{"gem 'bootsnap', require: false" if Rails.version >= "5.2"}
 gem 'jbuilder', '~> 2.0'
@@ -37,7 +37,7 @@ RUBY
 
 # Ruby version
 ########################################
-file '.ruby-version', 2.6.3
+file '.ruby-version', RUBY_VERSION
 
 # Procfile
 ########################################
