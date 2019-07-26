@@ -84,7 +84,7 @@ end
 ########################################
 run 'rm -rf app/assets/stylesheets'
 run 'rm -rf vendor'
-run 'curl -L https://github.com/DonatienRolland/rails-stylesheets/archive/master.zip > stylesheets.zip'
+run 'curl -L https://github.com/AvemCreation/rails-stylesheets/archive/master.zip > stylesheets.zip'
 run 'unzip stylesheets.zip -d app/assets && rm stylesheets.zip && mv app/assets/rails-stylesheets-master app/assets/stylesheets'
 
 run 'rm app/assets/javascripts/application.js'
@@ -142,12 +142,12 @@ file 'app/views/shared/_flashes.html.erb', <<-HTML
 HTML
 
 run 'curl -L https://raw.githubusercontent.com/AvemCreation/awesome-navbars/master/templates/_navbar_avemcreation.html.erb > app/views/shared/_navbar.html.erb'
-run 'curl -L https://raw.githubusercontent.com/DonatienRolland/rails-templates/master/logo.png > app/assets/images/logo.png'
+run 'curl -L https://raw.githubusercontent.com/AvemCreation/rails-templates/master/logo.png > app/assets/images/logo.png'
 
 # README
 ########################################
 markdown_file_content = <<-MARKDOWN
-Rails app generated with [AvemCreation/rails-templates](https://github.com/DonatienRolland/rails-templates), created by the [Avem Création](https://www.avemcreation.com) team.
+Rails app generated with [AvemCreation/rails-templates](https://github.com/AvemCreation/rails-templates), created by the [Avem Création](https://www.avemcreation.com) team.
 MARKDOWN
 file 'README.md', markdown_file_content, force: true
 
@@ -269,11 +269,11 @@ JS
 
   # Rubocop
   ########################################
-  run 'curl -L https://raw.githubusercontent.com/DonatienRolland/rails-templates/master/.rubocop.yml > .rubocop.yml'
+  run 'curl -L https://raw.githubusercontent.com/AvemCreation/rails-templates/master/.rubocop.yml > .rubocop.yml'
 
   # Git
   ########################################
   git :init
   git add: '.'
-  git commit: "-m 'Initial commit with devise template from https://github.com/DonatienRolland/rails-templates'"
+  git commit: "-m 'Initial commit with devise template from https://github.com/AvemCreation/rails-templates'"
 end
